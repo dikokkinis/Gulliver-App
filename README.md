@@ -105,9 +105,9 @@ Everyone is searching for "the best local gems" before going to a new city. With
 Once stored, the shop appears as a rectangle with the image that the user uploaded. Beneath the image appears the name and the shop's rating. When the user clicks on a shop, the card flips revealing the shop's location. If the user double-clicks, the app transfers the user to google maps in that specific location. 
 
 <p align="center">
-  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/10.gif" width="180"/>
-  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/11.gif" width="180"/>
   <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/12.gif" width="180"/>
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/11.gif" width="180"/>
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/10.gif" width="180"/>
 </p>
 
 
