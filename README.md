@@ -22,7 +22,7 @@ I included a custom splash screen when the app launches before the main screen.
 The app's **main screen** comprises of the map of Europe, markers for each city, a navigation bar where the user can interact and navigate through each city, a *a.Transaction Menu* and *b.Menu*. 
 
 <p align="center">
-  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/1.gif" width="150"/>
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/1.gif" width="180"/>
 </p>
 
 **a. Transaction Menu**
@@ -30,7 +30,7 @@ The app's **main screen** comprises of the map of Europe, markers for each city,
 Keeping track of who owes what and to whom can be frustrating during vacation. In the transaction menu, the user can choose the person that made the payment and the amount paid, then the app charges half of that amount to the other person and keeps track of the amound he owes until the clear button is pressed. 
 
 <p align="center">
-  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/2.gif" width="150"/>
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/2.gif" width="180"/>
 </p>
 
 **b. Menu**
@@ -42,8 +42,72 @@ The menu contains three options. A *gallery screen* where the user can upload hi
 This screen contains all the transportation tickets and/or other valuable documents. The user can press the add button and load a new ticket using the file explorer. Once loaded the ticket will appear on the screen and the user will be able to open it. 
 
 <p align="center">
-  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/3.gif" width="150"/>
-  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/4.gif" width="150"/>
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/3.gif" width="180"/>
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/4.gif" width="180"/>
+</p>
+
+## Packlist screen
+
+This screen contains all the items that the user has entered. The user can "tick" an item to mark it green meaning that he has checked it. Also he can delete an item. 
+
+<p align="center">
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/5.gif" width="180"/>
+</p>
+
+## City screen
+
+Each city of the trip has a marker that when pressed transfers the user to the home screen of the specific city. The logic of this screen is for the user to store:
+
+1. The schedule of the city
+2. City's budget
+3. Tickets related to the city (museums, concerts..)
+4. History of each city
+5. Notes
+6. Shops like cafe, bars, restaurants that he would like to visit
+
+<p align="center">
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/6.gif" width="180"/>
+</p>
+
+**Schedule**
+
+The number of days and dates of each city is hardcoded into the app, but the user is able to write the schedule for each day
+
+<p align="center">
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/9.gif" width="180"/>
+</p>
+
+**Tickets**
+
+As before, the user is able to load his tickets related to each city, like museum tickets or other activities. 
+
+<p align="center">
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/7.gif" width="180"/>
+</p>
+
+**Notes**
+
+The user can also take notes within the app, as a regular notebook. 
+
+<p align="center">
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/8.gif" width="180"/>
+</p>
+
+**Shops**
+
+Everyone is searching for "the best local gems" before going to a new city. With the amount of information shared online though the options are numerous. That's why the user can also store his favourite shops categorized. All he/she has to do is to enter the category's name, and then for each shop state the following info:
+
+* The name of the shop
+* The shop's location (from google maps)
+* The shop's google rating
+* A preferred image
+
+Once stored, the shop appears as a rectangle with the image that the user uploaded. Beneath the image appears the name and the shop's rating. When the user clicks on a shop, the card flips revealing the shop's location. If the user double-clicks, the app transfers the user to google maps in that specific location. 
+
+<p align="center">
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/10.gif" width="180"/>
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/11.gif" width="180"/>
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/12.gif" width="180"/>
 </p>
 
 
