@@ -1,4 +1,5 @@
-# Gulliver-App
+# Gulliver-App <img width="115" height="29" alt="Gulliver" src="https://github.com/user-attachments/assets/7f107276-4395-4c35-ba9e-e7dc3cec613d" />
+
 After graduating, i decided to travel through Europe, scoping 11 countries and 14 cities. Managing this trip was challenging and for that reason i made this custom app just for personal use..and also for fun. 
 
 Everything i used for the app development: 
@@ -16,9 +17,12 @@ Using Figma, I designed the layout of every screen using custom-made buttons and
 
 # App-demo
 
+## Main Screen
 The app's **main screen** comprises of the map of Europe, markers for each city, a navigation bar where the user can interact and navigate through each city, a *a.Transaction Menu* and *b.Menu*. 
 
-![](https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/1.gif)
+<p align="center">
+  <img src="https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/1.gif" width="300"/>
+</p>
 
 
 
