@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gulliver</string>
+    <string name="app_name_title">Gulliver Title</string>
+    <string name="map_description">Map showing location</string>
+    <string name="previous_city">Previous City</string>
+    <string name="next_city">Next City</string>
+    <string name="gallery_icon">Gallery</string> <string name="transaction_icon">Transactions</string> ```
+</resources>

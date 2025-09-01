@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/ticket_input_shape.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Gradient stroke background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="90"
+                android:startColor="#FF7FB1F5"
+                android:endColor="#FFEBAFA5" />
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+
+    <!-- Inner white fill with padding to simulate border -->
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/>
+            <corners android:radius="6dp"/>
+        </shape>
+    </item>
+
+</layer-list>

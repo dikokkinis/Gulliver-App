@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Top section with image, title, budget and icons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/headerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/london_bg"
+            app:shapeAppearanceOverlay="@style/RoundedBottomCornersImage"
+            android:layout_marginBottom="54dp"/>
+
+        <TextView
+            android:id="@+id/cityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="London"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/latobold"
+            android:textStyle="bold"
+            android:textSize="46sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="70dp"/>
+
+        <!-- Icons -->
+        <LinearLayout
+            android:id="@+id/iconRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageButton
+                android:id="@+id/cityticketButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/city_tickets_icon" />
+
+            <ImageButton
+                android:id="@+id/historyButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/history_icon" />
+
+            <ImageButton
+                android:id="@+id/notesButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/notes_icon" />
+        </LinearLayout>
+
+        <!-- Budget -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budget:"
+                android:fontFamily="@font/latobold"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/GRAY"
+                android:layout_marginEnd="4dp" />
+
+            <EditText
+                android:id="@+id/budgetEditText"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Ποσό"
+                android:padding="2dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/latoregular"
+                android:background="@drawable/amount_background" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="Πρόγραμμα"
+                android:textColor="@color/GRAY"
+                android:fontFamily="@font/latobold"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Horizontal Day Scroll -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/dayScrollLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/day1Card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/day_card_bg"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/day1Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DAY1"
+                            android:textColor="#FFFFFF"
+                            style="@style/TextWithShadow"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/day1Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21 Jul"
+                            style="@style/TextWithShadow"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/day2Card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/day_card_bg"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/day2Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DAY2"
+                            style="@style/TextWithShadow"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/day2Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22 Jul"
+                            style="@style/TextWithShadow"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/day3Card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/day_card_bg"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/day3Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DAY3"
+                            style="@style/TextWithShadow"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/day3Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="23 Jul"
+                            style="@style/TextWithShadow"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/day4Card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/day_card_bg"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/day4Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DAY4"
+                            style="@style/TextWithShadow"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/day4Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24 Jul"
+                            style="@style/TextWithShadow"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/day5Card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/day_card_bg"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/day5Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DAY5"
+                            style="@style/TextWithShadow"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/day5Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25 Jul"
+                            style="@style/TextWithShadow"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/day6Card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/day_card_bg"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/day6Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DAY6"
+                            style="@style/TextWithShadow"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/day6Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="26 Jul"
+                            style="@style/TextWithShadow"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <!-- Add more day views dynamically -->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="18dp"
+                android:layout_height="2dp"
+                android:background="#898989" />
+            <!-- This container will hold all the vertical shop category layouts -->
+            <LinearLayout
+                android:id="@+id/allCategoriesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"/>
+
+            <!-- Button to add a new category -->
+            <ImageButton
+                android:id="@+id/addNewCategoryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/add_category_btn"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Νέα Κατηγορία"
+                android:fontFamily="@font/latoregular"
+                android:textSize="11sp"
+                android:textColor="@color/GRAY"
+                android:gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

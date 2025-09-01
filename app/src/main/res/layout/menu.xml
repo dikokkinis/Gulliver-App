@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="188dp"
+    android:layout_height="232dp"
+    android:layout_gravity="top"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="0dp"
+    app:cardCornerRadius="40dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- First item -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="28dp"
+            android:onClick="goToGallery">
+
+            <ImageButton
+                android:id="@+id/galleryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gallery_icon"
+                android:background="#FFFFFF"
+                />
+
+            <TextView
+                android:id="@+id/syllogitext"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Συλλογή"
+                android:gravity="left"
+                android:textSize="16sp"
+                android:textColor="#282C28"
+                android:fontFamily="@font/latobold"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Second item -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="28dp"
+            android:onClick="goToTickets">
+
+            <ImageButton
+                android:id="@+id/ticketsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tickets_icon"
+                android:background="#FFFFFF"
+                />
+
+            <TextView
+                android:id="@+id/eishthriatext"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Εισητήρια"
+                android:gravity="left"
+                android:textSize="16sp"
+                android:textColor="#282C28"
+                android:fontFamily="@font/latobold"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Third item -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="goToPacklist">
+
+            <ImageButton
+                android:id="@+id/packButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pack_icon"
+                android:background="#FFFFFF"
+                />
+
+            <TextView
+                android:id="@+id/pragmatatext"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Πράγματα"
+                android:gravity="left"
+                android:textSize="16sp"
+                android:textColor="#282C28"
+                android:fontFamily="@font/latobold"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

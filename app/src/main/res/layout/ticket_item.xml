@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/ticket_item.xml -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ticketCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/ticket_bg"
+    android:layout_marginBottom="18dp">
+
+    <!-- Invisible clickable button filling the whole background -->
+    <ImageButton
+        android:id="@+id/ticketButton"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Tap to open PDF" />
+
+    <LinearLayout
+        android:id="@+id/ticketInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+        <!-- Row 1: FROM - TO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fromText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:textStyle="bold"
+                android:fontFamily="@font/latobold"
+                android:textColor="@color/GRAY"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:id="@+id/toText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:fontFamily="@font/latobold"
+                android:textColor="@color/GRAY"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+
+        <!-- Row 2: Date centered -->
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/latoregular"
+            android:textColor="#636363"
+            android:textSize="16sp" />
+
+        <!-- Row 3: Departure - Arrival -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/departureTimeText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#636363"
+                android:textSize="16sp"
+                android:fontFamily="@font/latoregular" />
+
+            <TextView
+                android:id="@+id/arrivalTimeText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="#636363"
+                android:textSize="16sp"
+                android:fontFamily="@font/latoregular" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/deleteIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="end|top"
+        android:layout_margin="8dp"
+        android:src="@drawable/trash_icon"
+        android:contentDescription="Delete Ticket"
+        android:background="?attr/selectableItemBackground"
+        android:visibility="gone" />
+</FrameLayout>
+

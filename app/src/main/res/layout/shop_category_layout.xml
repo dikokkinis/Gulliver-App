@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+    <!-- Title of the category (e.g., "Coffee Shops") -->
+    <!-- Container for the title and delete button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shopCategoryTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/latobold"
+            android:textColor="@color/GRAY"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <!-- **** ADDED: Delete button for the category **** -->
+        <ImageButton
+            android:id="@+id/deleteCategoryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/trash_icon"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- EditText to enter the category title, only visible when creating a new category -->
+    <EditText
+        android:id="@+id/shopCategoryEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:hint="Προσθέστε Κατηγορία"
+        android:imeOptions="actionDone"
+        android:inputType="textCapWords"
+        android:fontFamily="@font/latobold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#898989"
+        android:background="@drawable/amount_background"
+        android:visibility="visible" />
+
+    <!-- This HorizontalScrollView will contain all the shop cards -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/shopsHorizontalContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- The "Add Shop" button will now be the first item in the horizontal list -->
+            <ImageButton
+                android:id="@+id/addShopButton"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/add_shop_btn"/>
+
+            <!-- Shop cards will be added here dynamically -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

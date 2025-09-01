@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gulliver"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Gulliver">
+        </activity>
+        <activity android:name=".BarcelonaActivity" />
+        <activity android:name=".LisbonActivity" />
+        <activity android:name=".PortoActivity" />
+        <activity android:name=".ParisActivity" />
+        <activity android:name=".AmsterdamActivity" />
+        <activity android:name=".LondonActivity" />
+        <activity android:name=".CopenhagenActivity" />
+        <activity android:name=".OsloActivity" />
+        <activity android:name=".StockholmActivity" />
+        <activity android:name=".BerlinActivity" />
+        <activity android:name=".PragueActivity" />
+        <activity android:name=".RomeActivity" />
+        <activity android:name=".NaplesActivity" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".TicketsActivity" />
+        <activity android:name=".CityTicketActivity" />
+        <activity android:name=".PacklistActivity" />
+        <activity android:name=".AddTicketActivity" />
+        <activity android:name=".AddCityTicketActivity" />
+        <activity android:name=".CityActivity" />
+        <activity android:name=".AddShopActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Gulliver"> <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

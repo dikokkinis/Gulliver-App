@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="260dp"
+    android:layout_gravity="end|top"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="0dp"
+    app:cardCornerRadius="40dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Οφειλές"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:textColor="#282C28"
+        android:fontFamily="@font/latobold"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:text="Χριστίνα"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/latobold"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/valueChristina"
+            android:text="0"
+            android:textSize="16sp"
+            android:fontFamily="@font/latobold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#282C28"/>
+        <TextView
+            android:id="@+id/eurosymbol"
+            android:layout_marginLeft="2dp"
+            android:text="€"
+            android:textSize="16sp"
+            android:fontFamily="@font/latobold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#282C28"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_marginRight="4dp">
+
+        <TextView
+            android:text="Δημήτρης"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/latobold"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/valueDimitris"
+            android:text="0"
+            android:textSize="16sp"
+            android:fontFamily="@font/latobold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#282C28"/>
+        <TextView
+            android:id="@+id/eurosymbol2"
+            android:layout_marginLeft="2dp"
+            android:text="€"
+            android:textSize="16sp"
+            android:fontFamily="@font/latobold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#282C28"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/clear_button"
+            android:background="#FFFFFF"
+            android:contentDescription="Clear"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- android:visibility="gone" -->
+        <ImageButton
+            android:id="@+id/btnEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/enter_button"
+            android:background="#FFFFFF"
+            android:contentDescription="Enter"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnChooseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/person_button"
+            android:background="#FFFFFF"
+            android:contentDescription="Διάλεξε άτομο"
+
+            />
+
+        <EditText
+            android:id="@+id/inputAmount"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@drawable/amount_background"
+            android:inputType="numberDecimal"
+            android:hint="Ποσό"
+            android:fontFamily="@font/latoregular"
+            android:textSize="14sp"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>

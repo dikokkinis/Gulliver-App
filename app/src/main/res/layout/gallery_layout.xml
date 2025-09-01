@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F5F5F5">
+
+    <!-- Shadowed background card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/backgroundCard"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5F5F5"
+        app:cardElevation="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Συλλογή"
+                android:fontFamily="@font/latobold"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/GRAY"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:background="#F5F5F5"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="24dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <ImageButton
+                    android:id="@+id/barcelonaAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="BarcelonaIcon"
+                    android:src="@drawable/barcelona_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/barcelonaTextView" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:text="Βαρκελώνη"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:textColor="#616060"
+                    android:gravity="center_horizontal" app:layout_constraintTop_toBottomOf="@id/barcelonaAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/barcelonaAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/barcelonaAlbumIcon" android:layout_marginTop="4dp"/>
+
+                <ImageButton
+                    android:id="@+id/lisbonAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="LisbonIcon"
+                    android:src="@drawable/lisbon_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toEndOf="@id/barcelonaAlbumIcon"
+                    app:layout_constraintTop_toTopOf="@id/barcelonaAlbumIcon"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/lisbonTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Λισαβώνα"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#616060"
+                    app:layout_constraintTop_toBottomOf="@id/lisbonAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/lisbonAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/lisbonAlbumIcon"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="0dp"/>
+
+                <ImageButton
+                    android:id="@+id/portoAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="PortoIcon"
+                    android:src="@drawable/porto_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toEndOf="@id/lisbonAlbumIcon"
+                    app:layout_constraintTop_toTopOf="@id/lisbonAlbumIcon"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/portoTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Πόρτο"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#616060"
+                    app:layout_constraintTop_toBottomOf="@id/portoAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/portoAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/portoAlbumIcon"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="0dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <ImageButton
+                    android:id="@+id/parisAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="ParisIcon"
+                    android:src="@drawable/paris_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/parisTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Παρίσι"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:textColor="#616060"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/parisAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/parisAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/parisAlbumIcon"
+                    android:layout_marginTop="4dp"/>
+
+                <ImageButton
+                    android:id="@+id/amsterdamAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="AmsterdamIcon"
+                    android:src="@drawable/amsterdam_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toEndOf="@id/parisAlbumIcon"
+                    app:layout_constraintTop_toTopOf="@id/parisAlbumIcon"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/amsterdamTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Άμστερνταμ"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#616060"
+                    app:layout_constraintTop_toBottomOf="@id/amsterdamAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/amsterdamAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/amsterdamAlbumIcon"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="0dp"/>
+
+                <ImageButton
+                    android:id="@+id/londonAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="LondonIcon"
+                    android:src="@drawable/london_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toEndOf="@id/amsterdamAlbumIcon"
+                    app:layout_constraintTop_toTopOf="@id/amsterdamAlbumIcon"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/londonTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Λονδίνο"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#616060"
+                    app:layout_constraintTop_toBottomOf="@id/londonAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/londonAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/londonAlbumIcon"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="0dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <ImageButton
+                    android:id="@+id/copenhagenAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="CopenhagenIcon"
+                    android:src="@drawable/copenhagen_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/copenhagenTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Κοπεγχάγη"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:textColor="#616060"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/copenhagenAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/copenhagenAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/copenhagenAlbumIcon"
+                    android:layout_marginTop="4dp"/>
+
+                <ImageButton
+                    android:id="@+id/osloAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="OsloIcon"
+                    android:src="@drawable/oslo_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toEndOf="@id/copenhagenAlbumIcon"
+                    app:layout_constraintTop_toTopOf="@id/copenhagenAlbumIcon"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/osloTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Όσλο"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#616060"
+                    app:layout_constraintTop_toBottomOf="@id/osloAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/osloAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/osloAlbumIcon"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="0dp"/>
+
+                <ImageButton
+                    android:id="@+id/stockholmAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="StockholmIcon"
+                    android:src="@drawable/stockholm_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toEndOf="@id/osloAlbumIcon"
+                    app:layout_constraintTop_toTopOf="@id/osloAlbumIcon"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/stockholmTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Στοκχόλμη"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#616060"
+                    app:layout_constraintTop_toBottomOf="@id/stockholmAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/stockholmAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/stockholmAlbumIcon"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="0dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <ImageButton
+                    android:id="@+id/berlinAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="BerlinIcon"
+                    android:src="@drawable/berlin_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/berlinTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Βερολίνο"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:textColor="#616060"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/berlinAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/berlinAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/berlinAlbumIcon"
+                    android:layout_marginTop="4dp"/>
+
+                <ImageButton
+                    android:id="@+id/pragueAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="PragueIcon"
+                    android:src="@drawable/prague_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toEndOf="@id/berlinAlbumIcon"
+                    app:layout_constraintTop_toTopOf="@id/berlinAlbumIcon"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/pragueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Πράγα"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#616060"
+                    app:layout_constraintTop_toBottomOf="@id/pragueAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/pragueAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/pragueAlbumIcon"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="0dp"/>
+
+                <ImageButton
+                    android:id="@+id/romeAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="RomeIcon"
+                    android:src="@drawable/rome_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toEndOf="@id/pragueAlbumIcon"
+                    app:layout_constraintTop_toTopOf="@id/pragueAlbumIcon"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/romeTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ρώμη"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#616060"
+                    app:layout_constraintTop_toBottomOf="@id/romeAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/romeAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/romeAlbumIcon"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="0dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <ImageButton
+                    android:id="@+id/naplesAlbumIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="NaplesIcon"
+                    android:src="@drawable/naples_album_icon"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/naplesTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Νάπολη"
+                    android:fontFamily="@font/latoregular"
+                    android:textSize="16sp"
+                    android:textColor="#616060"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/naplesAlbumIcon"
+                    app:layout_constraintStart_toStartOf="@id/naplesAlbumIcon"
+                    app:layout_constraintEnd_toEndOf="@id/naplesAlbumIcon"
+                    android:layout_marginTop="4dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

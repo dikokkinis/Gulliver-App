@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@drawable/notes_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/latobold"
+        android:textStyle="bold"
+        android:textSize="46sp"
+        android:text="Σημειώσεις"
+        android:textColor="@color/GRAY"/>
+
+    <EditText
+        android:id="@+id/dialogEditText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="..."
+        android:fontFamily="@font/latoregular"
+        android:textSize="16sp"
+        android:textColor="@color/GRAY"
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        android:gravity="top"
+        android:background="@android:color/transparent"/>
+</LinearLayout>

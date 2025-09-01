@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Title Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardElevation="12dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Πράγματα"
+            android:fontFamily="@font/latobold"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/GRAY"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp" />
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/trash_icon"
+            android:visibility="gone"
+            android:contentDescription="Delete Item"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Input field for new items -->
+    <EditText
+        android:id="@+id/editTextItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Προσθήκη αντικειμένου"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:background="@drawable/ticket_input"
+        android:padding="8dp"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/latobold" />
+
+    <!-- RecyclerView to show list of items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="16dp"/>
+</LinearLayout>
