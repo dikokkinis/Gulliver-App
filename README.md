@@ -3,10 +3,10 @@ After graduating, i decided to travel through Europe, scoping 11 countries and 1
 
 Everything i used for the app development: 
 
-1. Rough sketches of the general idea, design and functionalities
-2. Figma for the layout design and for the icons, buttons etc
-3. Android Studio framework for coding, using Kotling and XML
-4. AI chatbots helping with the coding
+1. **Rough sketches** of the general idea, design and functionalities
+2. **Figma** for the layout design and for the icons, buttons etc
+3. **Android Studio** framework for coding, using Kotling and XML
+4. **AI chatbots** helping with the coding
 
 # Figma
 
@@ -16,6 +16,9 @@ Using Figma, I designed the layout of every screen using custom-made buttons and
 
 # App-demo
 
+The app's **main screen** comprises of the map of Europe, markers for each city, a navigation bar where the user can interact and navigate through each city, a *a.Transaction Menu* and *b.Menu*. 
+
+! [] (https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/1.gif)
 
 
 
