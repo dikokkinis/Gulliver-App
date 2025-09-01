@@ -18,7 +18,7 @@ Using Figma, I designed the layout of every screen using custom-made buttons and
 
 The app's **main screen** comprises of the map of Europe, markers for each city, a navigation bar where the user can interact and navigate through each city, a *a.Transaction Menu* and *b.Menu*. 
 
-! [] (https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/1.gif)
+![](https://github.com/dikokkinis/Gulliver-App/blob/main/GIFs/1.gif)
 
 
 
